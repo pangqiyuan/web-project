@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://code.alibabatech.com/schema/dubbo        
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+	
+	<!--扫描注解  springmvc-->
+	<context:component-scan base-package="club.klovec.*.controller"></context:component-scan>
+	<!-- 注解驱动 -->
+	<mvc:annotation-driven></mvc:annotation-driven>
+	<!-- 静态资源 -->
+	<mvc:resources location="/WEB-INF/js/" mapping="/js/**"></mvc:resources>
+	<mvc:resources location="/WEB-INF/css/" mapping="/css/**"></mvc:resources>
+	<mvc:resources location="/WEB-INF/images/" mapping="/images/**"></mvc:resources>
+	<!-- 视图解析器 -->
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/"></property>	
+		<property name="suffix" value=".jsp"></property>	
+	</bean>
+	<!--Mutipart解析器  -->
+	<bean  id = "multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"></bean>
+	<!--  拦截器-->
+	<mvc:interceptors >
+		<bean class="club.klovec.order.interceptor.LoginInterceptor"></bean>
+	</mvc:interceptors>
+	
+</beans>

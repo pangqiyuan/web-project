@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="yh-manage-0.0.1-SNAPSHOT">
+        <wb-resource deploy-path="/" source-path="/target/m2e-jee/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="yh-redis-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/yh-redis/yh-redis">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="yh-service-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/yh-service/yh-service">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="yh-pojo-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/yh-pojo/yh-pojo">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="yh-commons-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/yh-commons/yh-commons">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="yh-manage"/>
+        <property name="java-output-path" value="/yh-manage/target/classes"/>
+    </wb-module>
+</project-modules>

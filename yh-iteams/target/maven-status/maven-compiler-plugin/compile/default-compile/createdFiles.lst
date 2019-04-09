@@ -1,0 +1,16 @@
+club\klovec\iteams\controller\YhIteamsParamIteamsController.class
+club\klovec\iteams\service\impl\YhIteamsDescServiceImpl.class
+club\klovec\iteams\service\impl\YhIteamsParamIteamsServiceImpl.class
+club\klovec\iteams\service\impl\YhIteamsServiceImpl.class
+club\klovec\iteams\service\YhIteamsService.class
+club\klovec\iteams\controller\YhIteamsDescController.class
+club\klovec\iteams\pojo\PortalMenu.class
+club\klovec\iteams\service\YhIteamsCatService.class
+club\klovec\iteams\service\impl\YhIteamsCatServiceImpl.class
+club\klovec\iteams\controller\YhIteamsCatController.class
+club\klovec\iteams\service\YhIteamsDescService.class
+club\klovec\iteams\pojo\PortalMenuNode.class
+club\klovec\iteams\pojo\ParamNode.class
+club\klovec\iteams\service\YhIteamsParamIteamsService.class
+club\klovec\iteams\controller\YhIteamsController.class
+club\klovec\iteams\pojo\ParamIteams.class

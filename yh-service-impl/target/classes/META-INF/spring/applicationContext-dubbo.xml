@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans        
+        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd 
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd       
+        http://code.alibabatech.com/schema/dubbo        
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+	<!-- 给当前Provider自定义名字 -->
+	<dubbo:application name="dubbo-service" />
+	<!-- 配置注册中心 -->
+	<dubbo:registry address="192.168.40.143:2181" protocol="zookeeper" />
+	<!--配置端口 此端口是consumer直接调用provied真实服务的端口 -->
+	<dubbo:protocol name="dubbo" port="20882" payload="50 331 648"/>
+
+	<!--商品信息 -->
+	<dubbo:service interface="club.klovec.dubbo.service.YhIteamsDubboService"
+		ref="yhIteamsDubboServiceImpl" />
+	<bean id="yhIteamsDubboServiceImpl" class="club.klovec.dubbo.service.impl.YhIteamsDubboServiceImpl" />
+
+	<!-- 商品服务类目 -->
+	<dubbo:service interface="club.klovec.dubbo.service.YhIteamsCatDubboService"
+		ref="yhIteamsCatDubboServiceImpl" />
+	<bean id="yhIteamsCatDubboServiceImpl"
+		class="club.klovec.dubbo.service.impl.YhIteamsCatDubboServiceImpl" />
+
+	<!-- 商品描述服务 -->
+	<dubbo:service interface="club.klovec.dubbo.service.YhIteamsDescDubboService"
+		ref="yhITeamsDescDubboServiceImpl" />
+	<bean id="yhITeamsDescDubboServiceImpl"
+		class="club.klovec.dubbo.service.impl.YhITeamsDescDubboServiceImpl" />
+
+	<!-- 商品规格参数服务 -->
+	<dubbo:service interface="club.klovec.dubbo.service.YhIteamsParamDubboService"
+		ref="yhIteamsParamDubboServiceImpl" />
+	<bean id="yhIteamsParamDubboServiceImpl"
+		class="club.klovec.dubbo.service.impl.YhIteamsParamDubboServiceImpl" />
+
+	<!-- 网站内容分类管理服务 -->
+	<dubbo:service interface="club.klovec.dubbo.service.YhContentCategoryDubboService"
+		ref="yhContentCategoryDubboServiceImpl" />
+	<bean id="yhContentCategoryDubboServiceImpl"
+		class="club.klovec.dubbo.service.impl.YhContentCategoryDubboServiceImpl" />
+
+	<!-- 网站内容管理服务 -->
+	<dubbo:service interface="club.klovec.dubbo.service.YhContentDubboService"
+		ref="yhContentDubboServiceImpl" />
+	<bean id="yhContentDubboServiceImpl"
+		class="club.klovec.dubbo.service.impl.YhContentDubboServiceImpl" />
+	
+	<!-- 商品规格参数服务 -->
+	<dubbo:service interface="club.klovec.dubbo.service.YhIteamsParamIteamsDubboService"
+		ref="yhIteamsParamIteamsDubboServiceImpl" />
+	<bean id="yhIteamsParamIteamsDubboServiceImpl"
+		class="club.klovec.dubbo.service.impl.YhIteamsParamIteamsDubboServiceImpl" />
+	
+	<!-- 用户登录服务 -->
+	<dubbo:service interface="club.klovec.dubbo.service.YhUserDubboService"
+		ref="yhUserDubboServiceImpl" />
+	<bean id="yhUserDubboServiceImpl"
+		class="club.klovec.dubbo.service.impl.YhUserDubboServiceImpl" />
+	
+	<!-- 用户悬赏服务 -->
+	<dubbo:service interface="club.klovec.dubbo.service.YhXuanShangDubboService"
+		ref="yhXuanShangDubboServiceImpl" />
+	<bean id="yhXuanShangDubboServiceImpl"
+		class="club.klovec.dubbo.service.impl.YhXuanShangDubboServiceImpl" />
+	
+
+	<!--引入spring配置文件 -->
+	<import resource="../../applicationContext.xml" />
+</beans>

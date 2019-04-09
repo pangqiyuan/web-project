@@ -1,0 +1,26 @@
+.shousuokuang {
+    height: 172px;
+    border: none;
+}
+.shousuokuangTop .Left img {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.shousuokuangTop span {
+    position: absolute;
+    top: 62px;
+    left: 200px;
+    font-size: 32px;
+}
+.shousuokuangTop .Center {
+    float: right;
+    margin-right: 20px;
+}
+.shousuokuangTop .btn-primary {
+    font-size: 28px;
+}
+.btn-primary {
+    background-color: #29a4dd;
+    border-color: #29a4dd;
+}

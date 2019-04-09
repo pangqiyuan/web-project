@@ -1,0 +1,4 @@
+club\klovec\portal\service\YhContentService.class
+club\klovec\portal\controller\YhContentController.class
+club\klovec\portal\controller\PageController.class
+club\klovec\portal\service\impl\YhContentServiceImpl.class

@@ -1,0 +1,16 @@
+0:0:0:0:0:0:0:1 - - [06/Mar/2019:19:58:57 +0800] "GET /order/order-cart?id=1265316062 HTTP/1.1" 200 22827 http-bio-8085-exec-1 4293
+0:0:0:0:0:0:0:1 - - [06/Mar/2019:19:58:57 +0800] "GET /js/base.js HTTP/1.1" 200 12499 http-bio-8085-exec-5 196
+0:0:0:0:0:0:0:1 - - [06/Mar/2019:19:58:57 +0800] "GET /js/order.common.js HTTP/1.1" 200 9499 http-bio-8085-exec-6 208
+0:0:0:0:0:0:0:1 - - [06/Mar/2019:19:58:57 +0800] "GET /js/jquery-1.6.4.js HTTP/1.1" 200 92010 http-bio-8085-exec-4 219
+0:0:0:0:0:0:0:1 - - [06/Mar/2019:19:58:57 +0800] "GET /css/base.css HTTP/1.1" 200 48835 http-bio-8085-exec-3 250
+0:0:0:0:0:0:0:1 - - [06/Mar/2019:19:58:57 +0800] "GET /js/jquery.checkout.js HTTP/1.1" 200 13775 http-bio-8085-exec-7 278
+0:0:0:0:0:0:0:1 - - [06/Mar/2019:19:58:57 +0800] "GET /css/order-commons.css HTTP/1.1" 200 47435 http-bio-8085-exec-2 358
+0:0:0:0:0:0:0:1 - - [06/Mar/2019:19:58:57 +0800] "GET /js/ego.js HTTP/1.1" 200 1115 http-bio-8085-exec-7 84
+0:0:0:0:0:0:0:1 - - [06/Mar/2019:19:58:57 +0800] "GET /js/jquery-extend.js HTTP/1.1" 200 1802 http-bio-8085-exec-8 220
+0:0:0:0:0:0:0:1 - - [06/Mar/2019:19:58:57 +0800] "GET /js/lib-v1.js HTTP/1.1" 200 122967 http-bio-8085-exec-6 121
+0:0:0:0:0:0:0:1 - - [06/Mar/2019:19:58:57 +0800] "GET /images/20130725.png HTTP/1.1" 200 275 http-bio-8085-exec-3 163
+0:0:0:0:0:0:0:1 - - [06/Mar/2019:19:58:58 +0800] "GET /images/user_purchase.png HTTP/1.1" 200 1474 http-bio-8085-exec-9 184
+0:0:0:0:0:0:0:1 - - [06/Mar/2019:19:58:58 +0800] "GET /images/20130330A_2.png HTTP/1.1" 200 8252 http-bio-8085-exec-10 198
+0:0:0:0:0:0:0:1 - - [06/Mar/2019:19:58:58 +0800] "GET /images/purchase-icon.png HTTP/1.1" 200 658 http-bio-8085-exec-7 133
+0:0:0:0:0:0:0:1 - - [06/Mar/2019:19:59:04 +0800] "GET /favicon.ico HTTP/1.1" 404 949 http-bio-8085-exec-2 3
+0:0:0:0:0:0:0:1 - - [06/Mar/2019:19:59:21 +0800] "POST /order/create.html HTTP/1.1" 404 949 http-bio-8085-exec-10 5
