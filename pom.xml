@@ -9,7 +9,7 @@
 		<srvlet-version>3.0.1</srvlet-version>
 		<jsp-version>2.2</jsp-version>
 		<jstl-version>1.2</jstl-version>
-		<spring-version>4.3.7.RELEASE</spring-version>
+		<spring-version>5.2.20.RELEASE</spring-version>
 		<aspectjweaver-version>1.8.10</aspectjweaver-version>
 		<aopalliance-version>1.0</aopalliance-version>
 		<mybatis-version>3.4.6</mybatis-version>
